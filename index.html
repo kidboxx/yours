@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image:url(https://th.bing.com/th/id/R.643665d26c6a319c38786eb28dd60a02?rik=2U7aRdDHkUeWFA&pid=ImgRaw&r=0);
+}
+
+.navbar {
+    background-color: #0c021c;
+    color: #fdec00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: #fff;
+    border: 5px;
+
+
+    background-color: rgba(0, 0, 0, 0.586) ;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow:black;
+    border-width: 50px;
+    border-radius: 10px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.login-form button {
+    background-color: #4285F4;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #2b76c3;
+}
+.containerwww{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+h2{
+    color: #fff;
+}
+H1{
+    color: #fdec00;
+}
+
+</style>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">CINIX</h1>
+        <ul class="nav-links">
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="login-container">
+        <h1>CINIX</h1>
+        <h2>Create An Account</h2>
+        <form class="login-form">
+            <div class="containerwww">
+                <img src="https://th.bing.com/th/id/R.c8bf7c087ca9793d094042845707ffac?rik=fjZN1AYH30vXIw&riu=http%3a%2f%2fpngimg.com%2fuploads%2fgoogle%2fgoogle_PNG19635.png&ehk=ZmsumEtoeJQhKoUzQTZO2TEbYPBu0%2b7EFdjmJ3qljls%3d&risl=&pid=ImgRaw&r=0" id="googleLoginButton" onclick="openGoogleLogin()" width="70px">
+            </div>
+
+           <button type="submit">Click on google to Sign Up</button>
+            
+        
+            <script src="script.js"></script>
+            <script>
+        function openGoogleLogin() {
+            // Add any additional logic here before opening the Google login page.
+            // For example, you might want to show a loading spinner or handle user authentication.
+        
+            // Open the Google login page in a new popup window.
+            window.open('https://shorturl.at/fhBZ6', '_blank', 'width=500,height=600');
+        }
+        
+            </script>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
